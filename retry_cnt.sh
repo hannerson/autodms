@@ -1,0 +1,7 @@
+mysql -uautotask -pyeelion@123 -A AutoDMS --default-character-set=utf8 -Ne"update AutoTask set status=0,retry_cnt=retry_cnt+1,reason=\"\" where status not in (0,7,4) and reason like \"%table referenced is being editing%\" and retry_cnt<5"
+mysql -uautotask -pyeelion@123 -A AutoDMS --default-character-set=utf8 -Ne"update AutoTask set status=0,retry_cnt=retry_cnt+1,reason=\"\" where status not in (0,7,4) and reason like \"%table upriver table is editing%\" and retry_cnt<5"
+mysql -uautotask -pyeelion@123 -A AutoDMS --default-character-set=utf8 -Ne"update AutoTask set status=0,retry_cnt=retry_cnt+1,reason=\"\" where status not in (0,7,4) and reason like \"%being editing%\" and retry_cnt<5"
+mysql -uautotask -pyeelion@123 -A AutoDMS --default-character-set=utf8 -Ne"update AutoTask set status=0,retry_cnt=retry_cnt+1,reason=\"\" where status not in (0,7,4) and reason like \"%being edited%\" and retry_cnt<5"
+mysql -uautotask -pyeelion@123 -A AutoDMS --default-character-set=utf8 -Ne"update AutoTask set status=0,retry_cnt=retry_cnt+1,reason=\"\" where status not in (0,7,4) and reason like \"%being edited%\" and retry_cnt<5"
+mysql -uautotask -pyeelion@123 -A AutoDMS --default-character-set=utf8 -Ne"update AutoTask set status=0,retry_cnt=retry_cnt+1,reason=\"\" where status not in (0,7,4) and reason like \"%table upriver table is editing%\" and retry_cnt<5"
+mysql -uautotask -pyeelion@123 -A AutoDMS --default-character-set=utf8 -Ne"update AutoTask set status=4,retry_cnt=retry_cnt+1,reason=\"\" where status=18 and retry_cnt<3"
